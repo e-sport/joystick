@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{86E64A00-A758-870B-CE1C-361C4C2E0B2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_6;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT;MOBILE_INPUT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\InputManager.cs" />
+     <Compile Include="Assets\Joystick.cs" />
+     <Compile Include="Assets\TestV.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\CharacterCreator\CharacterBadge.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\CharacterCreator\CharactersBadgesRefresher.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Common\CharacterHUDCanvas.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Common\GameMenuCanvas.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Common\MainMenuManager.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Common\NPCDialogManager.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Common\PanelInstance.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Common\PanelsManager.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Common\PopUpInfo.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\DragItem.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\DragShortcut.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\DropShortcut.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\DropStockArea.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\DropSwapItem.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\DropSwapShortcut.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\GUICraft.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\GUICraftListLoader.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\GUICrafting.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\GUIIStockItemLoader.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\GUIItemCollector.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\GUIItemData.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\GUIItemDataNeed.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\GUIItemLoader.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\GUIPlayerItemLoader.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\TooltipDetails.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\TooltipInstance.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\TooltipTrade.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\TooltipTrigger.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Inventory\TooltipUsing.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\LevelSelector\GUILevelPresetSelector.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\LevelSelector\GUILevelPresetsLoader.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Network\ConnectingEvent.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Network\ConnectionInfo.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Network\GUIGameRoom.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Network\GUIGameRoomLoader.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Scoreboard\GUIScoreBar.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Scoreboard\GUIScoreBarLoader.cs" />
+     <Compile Include="Assets\UnitZ\GUI\Elements\Scoreboard\GUITeamBar.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\AI\AICharacterController.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\AI\AIManager.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\AI\EnemySpawner.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\AI\MassiveAIController.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\CharacterAnimation.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\CharacterCreator\CharacterCreator.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\CharacterCreator\CharacterCreatorCanvas.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\CharacterCreator\CharacterManager.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\CharacterDriver.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\CharacterFootStep.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\CharacterHUD.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\CharacterInventory.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\CharacterItemDroper.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\CharacterLiving.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\CharacterMotor.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\CharacterSystem.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\FPSController\FPSController.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\FPSController\FPSInputController.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\FPSController\FPSRayActive.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\Presets\AnimalCharacter.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\Presets\HumanCharacter.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\Presets\PlayerCharacter.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\RagdollReplace.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\UIInventory.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\CharacterSystem\ValueBar.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Components\BoundFX.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Components\CameraSwing.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Components\ChatLog.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Components\DayNightCycle.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Components\DestroyTest.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Components\FPSCamera.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Components\FadeComponent.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Components\Ladder.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Components\LinkActive.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Components\MouseLock.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Components\MouseLooking.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Components\NextScene.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Components\PlacingArea.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Components\Popup.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Components\Rotation.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Components\StyleManager.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Damage\DamageBase.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Damage\DamageManager.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Damage\Explosion.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Damage\HitMark.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Damage\Projectile.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Damage\ProjectileMove.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Game\GameClient.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Game\GameManager.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Game\GameMenu.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Game\GameServer.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Game\Mainmenu.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Game\Mod\DeathMatchMod.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Game\PlayerManager.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Game\PlayerSave.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Game\PlayerSpawner.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Game\PlayerView.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Game\PlayersManager.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Game\SceneManager.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Game\SceneSave.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Game\ScoreManager.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Game\SpectreCamera.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Game\TreesManager.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Game\UnitZManager.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\Components\ApplyFood.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\Components\DoorFrame.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\Components\DoorOpener.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\Components\ItemStocker.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\Components\ObjectPlacing.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\Components\ObjectSpawn.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\Components\ObjectTrigger.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\Components\ObjectsSpawner.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\Components\StickerEffect.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\Components\TreasureBox.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\Components\WeaponEffect.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\Craft\ItemCrafter.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\Craft\ItemCrafterManager.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\ItemData\ItemBackpack.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\ItemData\ItemCollector.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\ItemData\ItemData.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\ItemData\ItemPickup.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\ItemFPSView\Crosshair.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\ItemFPSView\FPSItemEquipment.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\ItemFPSView\FPSItemPlacing.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\ItemFPSView\FPSItemThrow.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\ItemFPSView\FPSItemUsing.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\ItemFPSView\FPSWeaponEquipment.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\ItemManager.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\ItemSpawner.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\ItemView\ItemEquipment.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\ItemView\ItemSticker.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\ItemView\ItemToggleEquipment.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Item\ItemView\ItemWeaponEquipment.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Vehicles\AntiRoll.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Vehicles\Car.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Vehicles\CarControl.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Vehicles\Seat.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Vehicles\Vehicle.cs" />
+     <Compile Include="Assets\UnitZ\Scripts\Vehicles\WheelAlignment.cs" />
+     <Compile Include="Assets\reload.cs" />
+     <Compile Include="Assets\shoot.cs" />
+     <None Include="Assets\UnitZ\Standard Assets\Projectors\Guidelines.txt" />
+     <None Include="Assets\UnitZ\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\UnitZ\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+     <None Include="Assets\UnitZ\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\UnitZ\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+     <None Include="Assets\UnitZ\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\UnitZ\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\UnitZ\Sources\Shader\SkyBoxBlended.shader" />
+     <None Include="Assets\UnitZ\Sources\Shader\Doubleside.shader" />
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
