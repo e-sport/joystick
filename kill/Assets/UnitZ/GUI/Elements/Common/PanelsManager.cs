@@ -88,11 +88,11 @@ public class PanelsManager : MonoBehaviour
 		currentPanel = page;
 		
 		CloseAllPanels ();
+		page.gameObject.SetActive (true);
 		Animator anim = page.GetComponent<Animator> ();
 		if (anim && anim.isActiveAndEnabled) {
 			anim.SetBool ("Open", true);
 		}
-		page.gameObject.SetActive (true);
 		
 	}
 	
@@ -183,13 +183,13 @@ public class PanelsManager : MonoBehaviour
 		
 		page.PanelBefore = currentPanel;
 		currentPanel = page;
-		
+
 		CloseAllPanels ();
+		page.gameObject.SetActive (true);
 		Animator anim = page.GetComponent<Animator> ();
 		if (anim && anim.isActiveAndEnabled) {
 			anim.SetBool ("Open", true);
 		}
-		page.gameObject.SetActive (true);
 
 	}
 	
@@ -199,11 +199,11 @@ public class PanelsManager : MonoBehaviour
 		if (currentPanel && currentPanel.PanelBefore) {
 
 			CloseAllPanels ();
+			currentPanel.PanelBefore.gameObject.SetActive (true);
 			Animator anim = currentPanel.PanelBefore.GetComponent<Animator> ();
 			if (anim && anim.isActiveAndEnabled) {
 				anim.SetBool ("Open", true);
 			}
-			currentPanel.PanelBefore.gameObject.SetActive (true);
 			currentPanel = currentPanel.PanelBefore;
 		}
 	}
@@ -225,11 +225,11 @@ public class PanelsManager : MonoBehaviour
 		currentPanel = page;
 		
 		CloseAllPanels ();
+		page.gameObject.SetActive (true);
 		Animator anim = page.GetComponent<Animator> ();
 		if (anim && anim.isActiveAndEnabled) {
 			anim.SetBool ("Open", true);
 		}
-		page.gameObject.SetActive (true);
 		
 	}
 	
@@ -243,7 +243,7 @@ public class PanelsManager : MonoBehaviour
 
 			while (!closedStateReached && wantToClose) {
 				if (anim.isActiveAndEnabled && !anim.IsInTransition (0)) {
-					closedStateReached = anim.GetCurrentAnimatorStateInfo (0).IsName ("Closing");
+					closedStateReached = anim.GetCurrentAnimatorStateInfo (0).IsName ("Close");
 				}
 				yield return new WaitForEndOfFrame();
 			}
