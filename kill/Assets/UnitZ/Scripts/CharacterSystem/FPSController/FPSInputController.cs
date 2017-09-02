@@ -47,11 +47,13 @@ public class FPSInputController : MonoBehaviour
 //				FPSmotor.Move (new Vector3 (Input.GetAxis ("Horizontal"), 0, Input.GetAxis ("Vertical")));
 				FPSmotor.Move (new Vector3 (Horizontal, 0, Vertical));
 				// jump input
-				FPSmotor.Jump (Input.GetButton ("Jump"));
+//				FPSmotor.Jump (Input.GetButton ("Jump"));
+				FPSmotor.Jump (InputManager.GetButton ("Jump"));
 			
 			} else {
 				if (Driver) {
-					if (Input.GetKeyDown (KeyCode.F)) {
+//					if (Input.GetKeyDown (KeyCode.F)) {
+					if (InputManager.GetButton("Pickup")){
 						Driver.OutVehicle ();
 					}
 					Driver.Drive (new Vector2 (Input.GetAxis ("Horizontal"), Input.GetAxis ("Vertical")), Input.GetButton ("Jump"));
@@ -122,7 +124,8 @@ public class FPSInputController : MonoBehaviour
 			
 
 			// interactive input e.g. pickup item
-			if (Input.GetKeyDown (KeyCode.F)) {
+//			if (Input.GetKeyDown (KeyCode.F)) {
+			if (InputManager.GetButton("Pickup")) {
 				if (FPSmotor.character.inventory != null)
 					FPSmotor.character.Interactive (FPSmotor.FPSCamera.transform.position, FPSmotor.FPSCamera.transform.forward);
 			}

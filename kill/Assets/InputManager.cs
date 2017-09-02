@@ -9,6 +9,7 @@ public static class InputManager
 	//	public VirtualAxis Vertical;
 
 	static Dictionary<string, VirtualAxis> dict;
+	static Dictionary<string, VirtualButton> btn_dict;
 
 	public static Queue<int> Shoot;
 
@@ -16,6 +17,7 @@ public static class InputManager
 	static InputManager ()
 	{
 		dict = new Dictionary<string, VirtualAxis> ();
+		btn_dict = new Dictionary<string, VirtualButton> ();
 		Shoot = new Queue<int> ();
 	}
 
@@ -30,7 +32,16 @@ public static class InputManager
 		return dict [name].GetValue;
 	}
 
+	public static void RegisterVirtualButton (VirtualButton btn)
+	{
 
+		btn_dict [btn.name] = btn;
+	}
+
+	public static bool GetButton (string name)
+	{
+		return btn_dict [name].GetButton;
+	}
 
 	public class VirtualAxis
 	{
